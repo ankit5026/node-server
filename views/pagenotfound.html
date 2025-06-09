@@ -1,0 +1,28 @@
+<!-- pagenotfound.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .error-animation {
+      font-size: 2em;
+      color: #ff4444;
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="error-animation">404 - Page Not Found</h1>
+    <p>Sorry! The page you're looking for doesn't exist.</p>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+</body>
+</html>

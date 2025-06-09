@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9ebee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #1877f2;
+  margin-bottom: 30px;
+}
+
+.buttons button {
+  display: block;
+  margin: 10px auto;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: white;
+  background-color: #1877f2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #145db2;
+}
+
+.buttons i {
+  margin-right: 10px;
+}
+
+
+.payment-container {
+  max-width: 420px;
+  background-color: #f0f2f5;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1 {
+  color: #1877f2;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.payment-form label {
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.payment-form input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.payment-form input:focus {
+  border-color: #1877f2;
+  outline: none;
+}
+
+.payment-form button[type="submit"] {
+  background: linear-gradient(to right, #4CAF50, #2e7d32);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.payment-form button[type="submit"]:hover {
+  background: linear-gradient(to right, #388e3c, #1b5e20);
+}
+
+.back-btn {
+  margin-top: 20px;
+  background-color: transparent;
+  color: #1877f2;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.payment-form i,
+.back-btn i {
+  margin-right: 8px;
+  color: #555;
+}

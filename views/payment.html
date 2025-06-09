@@ -1,0 +1,42 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container payment-container">
+    <h1><i class="fas fa-lock"></i> Secure Payment</h1>
+    <form class="payment-form">
+      <label for="cardName"><i class="fas fa-user"></i> Cardholder Name</label>
+      <input type="text" id="cardName" placeholder="John Doe" required>
+
+      <label for="cardNumber"><i class="fas fa-credit-card"></i> Card Number</label>
+      <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+      <div class="row">
+        <div>
+          <label for="expiry"><i class="fas fa-calendar-alt"></i> Expiry</label>
+          <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+        </div>
+        <div>
+          <label for="cvv"><i class="fas fa-shield-alt"></i> CVV</label>
+          <input type="text" id="cvv" placeholder="123" maxlength="3" required>
+        </div>
+      </div>
+
+      <button type="submit"><i class="fas fa-paper-plane"></i> Pay ₹500</button>
+    </form>
+    <button onclick="window.location.href='index.html'" class="back-btn">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </button>
+  </div>
+</body>
+</html>
