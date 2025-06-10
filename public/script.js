@@ -1,14 +1,19 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".buttons button");
-  const validPages = ["/about", "/news", "/payment"];
 
   buttons.forEach(button => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       const page = button.getAttribute("data-page");
-      if (validPages.includes(page)) {
-        window.location.href = page;
-      } else {
+
+      try {
+        const response = await fetch(page, { method: "HEAD" });
+        if (response.ok) {
+          window.location.href = page;
+        } else {
+          window.location.href = "/pagenotfound";
+        }
+      } catch (error) {
         window.location.href = "/pagenotfound";
       }
     });
